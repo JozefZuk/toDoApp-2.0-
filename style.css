@@ -108,6 +108,12 @@ body {
   }
 }
 
+@media only screen and (min-width: 1940px) {
+  body {
+    font-size: 1.7em;
+  }
+}
+
 .taskDiv {
   background-color: #f3f3f3;
   text-transform: capitalize;
