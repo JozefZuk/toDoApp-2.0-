@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .topDiv {
@@ -26,11 +27,27 @@ body {
 }
 
 .topDiv__header__text {
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: 200;
-  margin-top: 0;
-  margin-bottom: 3vh;
-  display: box;
+  margin: 0 0 3vh 0;
+}
+
+.mainDiv {
+  min-height: 80vh;
+  width: 90vw;
+  padding: 10vh 5vw;
+  color: black;
+  position: relative;
+}
+
+.mainDiv__contentDiv {
+  margin-top: 50px;
+}
+
+.returnBtn {
+  position: absolute;
+  top: 50px;
+  right: 50px;
 }
 
 .btn {
