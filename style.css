@@ -47,6 +47,126 @@ body {
   margin-top: 50px;
 }
 
+.full-vw {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  grid-gap: 0;
+}
+
+.half-vw {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+}
+
+.smallTitle {
+  font-size: 2em;
+}
+
+.textInput {
+  padding: 5px 5px;
+  text-align: left;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 3px solid  #8540AF;
+  font-size: 1.5em;
+  color: #8540AF;
+  margin-right: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .half-vw {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .startBtn {
+    font-size: 30px;
+  }
+  .btn {
+    font-size: 40px;
+  }
+  .returnBtn {
+    display: none;
+  }
+  .topDiv___headerBox {
+    width: 90%;
+    line-height: 60px;
+    margin-bottom: 20px;
+  }
+  .title {
+    font-size: 50px;
+  }
+  .topDiv___headerBox___text {
+    display: none;
+  }
+}
+
+.taskDiv {
+  background-color: #f3f3f3;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 15px;
+  position: relative;
+  border-radius: 5px;
+  overflow-x: hidden;
+}
+
+.taskDiv > h1 {
+  margin: 0 30px;
+  display: inline-block;
+}
+
+.delBtn {
+  position: absolute;
+  right: 15px;
+  top: 5%;
+  height: 90%;
+  width: 45px;
+  background-image: url(img/del.svg);
+  background-size: cover;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border: 3px solid #8540AF;
+}
+
+.delBtn:hover {
+  background-image: url(img/del2.svg);
+}
+
+.checkBox {
+  position: absolute;
+  left: 15px;
+  top: 5%;
+  height: 90%;
+  width: 45px;
+  background-size: cover;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border: 5px solid #8540AF;
+  background-color: whitesmoke;
+  transition: 0.3s ease-in-out;
+}
+
+.check {
+  background-image: url(img/check.svg);
+}
+
+.check:hover {
+  background-image: url(img/check2.svg);
+}
+
+.mainDiv___contentDiv___readyTask {
+  overflow-y: scroll;
+  max-height: 60vh;
+}
+
 .returnBtn {
   position: absolute;
   top: 50px;
@@ -75,5 +195,10 @@ body {
 
 .purple {
   color: #8540AF;
+}
+
+#addBtn {
+  border-radius: 0;
+  padding: 10px 50px;
 }
 /*# sourceMappingURL=style.css.map */
