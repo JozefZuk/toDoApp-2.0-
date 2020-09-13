@@ -24,13 +24,12 @@ body
         color: #ffffff
 
         &__title
-            font-size: 4em
             margin: 10vh 0 0 0
 
         &__text
-            font-size: 1.4em
             font-weight: 200
             margin: 0 0 3vh 0
+
 
 .mainDiv
     min-height: 80vh
@@ -69,36 +68,6 @@ body
     color:  #8540AF
     margin-right: 0
 
-@media only screen and (max-width: 1000px) 
-    .half-vw
-        display: grid
-        grid-template-columns: repeat(1, 1fr)
-    
-    .startBtn
-        font-size: 30px
-    
-    .btn
-        font-size: 40px
-    
-    .returnBtn
-        display: none
-    
-    .topDiv___headerBox
-        width: 90%
-        line-height: 60px
-        margin-bottom: 20px
-    
-    .title
-        font-size: 50px
-    
-    .topDiv___headerBox___text
-        display: none
-    
-@media only screen and (min-width: 1940px) 
-    body
-        font-size: 1.7em
-    
-    
     
  
 .taskDiv
@@ -166,7 +135,6 @@ body
     text-decoration: none
     color: #000000
     font-weight: 700
-    font-size: 1.3em
  
     transition: 0.3s ease-in-out 
 
@@ -181,3 +149,46 @@ body
 #addBtn
     border-radius: 0
     padding: 10px 50px
+
+@media only screen and (max-width: 1700px) 
+
+    .title
+        font-size: 2.1em
+        margin: 0
+    .topDiv__header__text
+        display: none
+    .text
+        font-size: 1em
+        margin: 0
+    .btn
+        font-size: 0.9em
+        text-align: center
+        color: #ffffff
+
+
+@media only screen and (min-width: 1700px) 
+        .title
+            font-size: 4em
+        .text
+            font-size: 1.5em
+        .btn
+            font-size: 1.3em
+
+@media only screen and (max-width: 1700px) 
+ 
+    .half-vw
+        display: grid
+        grid-template-columns: repeat(1, 1fr)
+        width: 100%
+   
+    .returnBtn
+        display: none
+    
+  
+    
+ 
+    
+@media only screen and (min-width: 1940px) 
+    body
+        font-size: 1.7em
+    
