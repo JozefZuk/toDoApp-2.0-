@@ -146,10 +146,11 @@ body {
   background-color: #8540AF;
   border: 4px solid #8540AF;
   border-radius: 50px;
-  padding: 10px 75px;
+  padding: 10px 45px;
   text-decoration: none;
   color: #000000;
   font-weight: 700;
+  text-align: center;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
@@ -198,6 +199,15 @@ body {
   }
   .btn {
     font-size: 1.3em;
+  }
+  .half-vw {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (2fr)[1];
+        grid-template-columns: repeat(1, 2fr);
+  }
+  .firstBtn {
+    width: 50%;
   }
 }
 
