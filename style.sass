@@ -24,11 +24,11 @@ body
         color: #ffffff
 
         &__title
-            margin: 10vh 0 0 0
+            margin: 0
 
         &__text
             font-weight: 200
-            margin: 0 0 3vh 0
+            margin-bottom: 50px 
 
 
 .mainDiv
@@ -51,7 +51,8 @@ body
 .half-vw
     display: grid
     grid-template-columns: repeat(2, 1fr)
-    grid-gap: 50px
+    grid-gap: 10px
+
 
 .smallTitle
     font-size: 2em
@@ -78,6 +79,7 @@ body
     position: relative
     border-radius: 5px 
     overflow-x: hidden
+    min-height: 45px
 
 .taskDiv > h1
     margin: 0 30px
@@ -86,8 +88,7 @@ body
 .delBtn
     position: absolute
     right: 15px
-    top: 5%
-    height: 90%
+    height: 45px
     width: 45px
     background-image: url(img/del.svg)
     background-size: cover
@@ -100,8 +101,7 @@ body
 .checkBox
     position: absolute
     left: 15px
-    top: 5%
-    height: 90%
+    height: 45px
     width: 45px
     background-size: cover
     transition: 0.3s ease-in-out
@@ -115,7 +115,7 @@ body
 .check:hover
     background-image: url(img/check2.svg)
 
-.mainDiv___contentDiv___readyTask
+.mainDiv__contentDiv__readyTask
     overflow-y: scroll
     max-height: 60vh
 
@@ -176,7 +176,6 @@ body
             font-size: 1.3em
         .half-vw
             display: grid
-            grid-template-columns: repeat(1, 2fr)
         .firstBtn
             width: 50%
 
@@ -190,8 +189,10 @@ body
     .returnBtn
         display: none
     
-  
-    
+    .topDiv__header
+        width: 100%
+    .topDiv__header__title
+        margin-bottom: 50px
  
     
 @media only screen and (min-width: 1940px) 

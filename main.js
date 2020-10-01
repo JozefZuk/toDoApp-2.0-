@@ -21,7 +21,8 @@ addBtn.addEventListener("click",function(){
         taskBox.appendChild(readyTask[i]);
         readyTask[i].classList.add("taskDiv");
 
-        title[i] = document.createElement("H1")                  
+        title[i] = document.createElement("H1");
+        title[i].classList.add('text');      
         title[i].appendChild(document.createTextNode(task[i]));     
         readyTask[i].appendChild(title[i]);
 
@@ -39,9 +40,9 @@ addBtn.addEventListener("click",function(){
         checkbox[i].addEventListener("click",function(){
             checkbox[this.value].classList.toggle('check');
         })
+        readyTask[i].appendChild(checkbox[i]);
 
         readyTask[i].appendChild(btnId[i]);        
-        readyTask[i].appendChild(checkbox[i]);
 
         i ++;
         input.value = "";   
